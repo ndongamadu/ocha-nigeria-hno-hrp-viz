@@ -1,31 +1,92 @@
-body, h1, h2, h3, h4, h5, h6 {
+/*body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', sans-serif;
+}*/
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue';
+    font-weight: 350;
+}
+
+body { 
+    padding-top: 125px;
+}
+
+.navbar {
+    background-color: #096DB4;
+    margin-bottom: 0px;
+}
+
+#huma{
+    font-size: 24px;
+    color: white;
+}
+
+#needs{
+    font-size: 36px;
+    color: #70CFF5;
+}
+#year{
+    font-size: 23px;
+    color: #70CFF5;
+}
+
+#country{
+    font-size: 30px;
+    color: white;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 24px; 
+}
+h5 {
+    font-size: 19px;
 }
 
-
-h3 {
-    font-size: 18px;
-}
-h4 {
-    color: #222;
-    font-size: 16px;
-}
-
-body{
-    margin: 20px 0;
-    font-size: 14px;
+#kf {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top : 1px solid;
+    border-bottom: 1px solid;
+    font-size: 19px;
 }
 
-#header {
-    background-color: #80AEDD;
+#rowChart {
+    width: 100%;
 }
 
 #map {
-    height: 450px;
     width: 100%;
-    margin-top: 10px;
+    height: 450px;
+    padding-top: 10px;
 }
+
+.dc-chart g.row text {
+    dominant-baseline: middle;
+    fill: #333;
+    font-size: 1.1em;
+}
+
+.d3-tip {
+    padding: 5px;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.hdx-3w-info{
+    background-color: white;
+    font-size: 1.5em;
+}
+
+.keyfigure {
+    font-size: 26px;
+    color: #096DB4;
+/*    text-align: center;*/
+}
+
+
+.navbar-header{
+    width:100%;
+}
+.material-icons.md-48 { font-size: 68px; }

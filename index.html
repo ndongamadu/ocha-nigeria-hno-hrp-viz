@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/d3.min.js"></script>
@@ -22,81 +23,42 @@
         <script src="js/leaflet.js"></script>
         <script src="js/dc.js"></script>
         <script src="js/dc.leaflet.js"></script>
+        <script src="js/topojson.v1.min.js"></script>
         </head>
     <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                        <h2>
+                            <span id="year">2018 <br></span>
+                            <span id="huma">HUMANITARIAN<br></span>
+                            <span id="needs">NEEDS</span> <span class="pull-right" id="country">NIGERIA</span>
+                        </h2>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="row" id="header">
-                <h2>NIGERIA : 2018 People In Need and People Targeted </h2>
+            <div class="row">
+                <iframe  src="https://data.humdata.org/hxlpreview/show;url=http%3A%2F%2Fdata.humdata.org%2Fdataset%2F1ae0ce2e-6a65-4b7c-b1a5-eba1295252a4%2Fresource%2F1902571b-2fef-44c1-ae54-8c048dcc7515%2Fdownload%2Fhrp-nigeria-2018.xlsx;embeddedSource=Multiple%2520organisations;embeddedUrl=http%3A%2F%2Fdata.humdata.org%2Fdataset%2F1ae0ce2e-6a65-4b7c-b1a5-eba1295252a4;embeddedDate=March%25206%252C%25202018;embeddedConfig=%7B%22configVersion%22%3A3%2C%22bites%22%3A%5B%7B%22init%22%3Atrue%2C%22type%22%3A%22key%20figure%22%2C%22filteredValues%22%3A%5B%5D%2C%22errorMsg%22%3Anull%2C%22ingredient%22%3A%7B%22aggregateColumn%22%3Anull%2C%22valueColumn%22%3A%22%23targeted%2Btotal%22%2C%22aggregateFunction%22%3A%22sum%22%7D%2C%22dataTitle%22%3A%22%23targeted%2Btotal%22%2C%22displayCategory%22%3A%22Key%20Figures%22%2C%22hashCode%22%3A-240054169%2C%22value%22%3Anull%2C%22uiProperties%22%3A%7B%22title%22%3A%22Total%20people%20targeted%22%2C%22unit%22%3A%22mln%22%7D%2C%22computedProperties%22%3A%7B%22dataTitle%22%3A%22%23targeted%2Btotal%22%2C%22unit%22%3A%22mln%22%7D%2C%22dataProperties%22%3A%7B%7D%2C%22_configOrder%22%3A0%2C%22tempShowSaveCancelButtons%22%3Afalse%7D%2C%7B%22init%22%3Atrue%2C%22type%22%3A%22key%20figure%22%2C%22filteredValues%22%3A%5B%5D%2C%22errorMsg%22%3Anull%2C%22ingredient%22%3A%7B%22aggregateColumn%22%3Anull%2C%22valueColumn%22%3A%22%23targeted%2Bidps%22%2C%22aggregateFunction%22%3A%22sum%22%7D%2C%22dataTitle%22%3A%22%23targeted%2Bidps%22%2C%22displayCategory%22%3A%22Key%20Figures%22%2C%22hashCode%22%3A-700818725%2C%22value%22%3Anull%2C%22uiProperties%22%3A%7B%22title%22%3A%22Total%20IDPs%20targeted%22%2C%22unit%22%3A%22mln%22%7D%2C%22computedProperties%22%3A%7B%22dataTitle%22%3A%22%23targeted%2Bidps%22%2C%22unit%22%3A%22mln%22%7D%2C%22dataProperties%22%3A%7B%7D%2C%22_configOrder%22%3A1%2C%22tempShowSaveCancelButtons%22%3Afalse%7D%2C%7B%22init%22%3Atrue%2C%22type%22%3A%22chart%22%2C%22filteredValues%22%3A%5B%5D%2C%22errorMsg%22%3Anull%2C%22pieChart%22%3Atrue%2C%22ingredient%22%3A%7B%22aggregateColumn%22%3A%22%23adm1%2Bname%22%2C%22valueColumn%22%3A%22%23targeted%2Btotal%22%2C%22aggregateFunction%22%3A%22sum%22%7D%2C%22dataTitle%22%3A%22%23targeted%2Btotal%22%2C%22displayCategory%22%3A%22Charts%22%2C%22hashCode%22%3A9447866%2C%22values%22%3Anull%2C%22categories%22%3Anull%2C%22uiProperties%22%3A%7B%22swapAxis%22%3Atrue%2C%22showGrid%22%3Atrue%2C%22color%22%3A%22%231ebfb3%22%2C%22sorting%22%3A%22DESC%22%2C%22title%22%3A%22People%20targeted%20by%20State%22%7D%2C%22computedProperties%22%3A%7B%22pieChart%22%3Atrue%2C%22dataTitle%22%3A%22%23targeted%2Btotal%22%7D%2C%22dataProperties%22%3A%7B%7D%2C%22_configOrder%22%3A2%2C%22tempShowSaveCancelButtons%22%3Afalse%7D%5D%2C%22cookbookName%22%3A%22generic%22%7D;embeddedTitle=Quick Charts;recipeUrl=https%3A%2F%2Fraw.githubusercontent.com%2FOCHA-DAP%2Fhxl-recipes%2F1.0.2%2Fcookbook-library.json;chartSettings=false;chartShare=false" style="border:none; width:100%; min-height:500px"></iframe>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <h4>PEOPLE IN NEED</h4>
-                        <p id="totalPIN">XXXXXXXXXX</p>
-                        <div class="col-md-3">
-                            <h5>People in Need by categories</h5>
-                            <p id="byCategoriesPIN">XXXXX</p>
-                        </div>
-                        <div class="col-md-3">
-                            <h5>People in Need by Age</h5>
-                            <p id="byAgePIN">XXXXX</p>
-                        </div>
-<!-- 
-                        <div class="col-xs-2">
-                            <h5>Returnees</h5>
-                            <p id="returneesPIN">XXXXX</p>
-                        </div>
-                        <div class="col-xs-3">
-                            <h5>By Sex</h5>
-                            <div id="PINBySex"></div>
-                        </div>
-                        <div class="col-xs-3">
-                            <h5>By Age</h5>
-                            <div id="PINByAge"></div>
-                        </div> -->
-                    </div>
-                    <div class="row">
-                        <h4>PEOPLE TARGETED</h4>
-                        <p id="totalTGT">XXXXXXXXXX</p>
-                        <div class="col-xs-2">
-                            <h5>Remaining</h5>
-                            <p id="remainingTGT">XXXXX</p>
-                        </div>
-                        <div class="col-xs-2">
-                            <h5>IDPs</h5>
-                            <p id="idpTGT">XXXXX</p>
-                        </div>
-                        <div class="col-xs-2">
-                            <h5>Returnees</h5>
-                            <p id="returneesTGT">XXXXX</p>
-                        </div>
-                        <div class="col-xs-3">
-                            <h5>By Sex</h5>
-                            <div id="TGTBySex"></div>
-                        </div>
-                        <div class="col-xs-3">
-                            <h5>By Age</h5>
-                            <div id="TGTByAge"></div>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                    <h4>Number of people targeted by State</h4>
+                    <div id="hrptargedByState"></div>
                 </div>
-                <div class="col-md-6">
-                        <div id="map"></div>
-                        <p class="small">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</p>
+                <div class="col-md-4">
+                    <h4>Number of people targeted by LGA (Top 15)</h4>
+                    <div id="hrptargedByLGA"></div>
+                </div>
+                <div class="col-md-4">
+                    <h4></h4>
+                    <div id="map"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <h4>People in need VS People targeted per region</h4>
-                </div>
-                <div class="col-md-6">
-                    <h4>People in need VS People targeted per cluster</h4>
-                </div>
+                <div id="charts"></div>
             </div>
         </div> <!-- fin container-->
         <script src="js/site.js"></script>
-        <script>
-            
-        </script>
     </body>
 </html>

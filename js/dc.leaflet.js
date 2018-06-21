@@ -1,9 +1,11 @@
 /* global dc, L */
+var _map;
+
 dc.leafletChart = function (_chart) {
     "use strict";
     _chart = dc.baseChart(_chart);
 
-    var _map;
+    // var _map;
 
     var _mapOptions = false;
     var _defaultCenter = false;
@@ -16,6 +18,10 @@ dc.leafletChart = function (_chart) {
     };
 
     _chart._doRender = function () {
+        if (_map != undefined) {
+            _map.remove();
+        }
+        
         _map = L.map(_chart.root().node(), _mapOptions);
         if (_defaultCenter && _defaultZoom) {
             _map.setView(_chart.toLocArray(_defaultCenter), _defaultZoom);
